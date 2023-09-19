@@ -10,11 +10,20 @@
     */
 
     //ENTRADA
+    let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+    let listaNova = [];
 
+    for (let c = 0; c < listaDeLetras.length; c++) {
+        const letra = listaDeLetras[c].toLowerCase();
+
+        if (listaNova.includes(letra) == false) {
+            listaNova.push(letra);
+        }
+    }
     
     //PROCESSAMENTO
 
     
     //SAÍDA
-
+    document.write(`A lista de letras é: ${listaNova.sort().join(", ")}`);
 </script>

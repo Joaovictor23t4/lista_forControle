@@ -5,13 +5,13 @@
     Faça um programa que peça ao usuário para informar cinco números.
     No final, apresente o maior número informado pelo usuário.
     */
-
     //ENTRADA
-
-
+    let listaNumero = [];
     //PROCESSAMENTO
-
-
+    for (let c = 1; c < 5; c++) {
+        listaNumero.push(Number(prompt(`Informe um número`).trim()));
+    }
+    listaNumero.sort((a, b) => b-a);
     //SAÍDA
-
+    document.write(`O maior número é: ${listaNumero[0]}`);
 </script>

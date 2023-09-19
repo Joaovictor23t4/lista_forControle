@@ -7,11 +7,11 @@
     */
 
     //ENTRADA
-    
+    const qtdNotas = Number(prompt(`Quantas notas o aluno obteve?`).trim());
+    let soma = 0;
+    for (let c = 0; c < qtdNotas; c++) {
+        soma += Number(prompt(`Informe as notas do aluno`));
+    }
 
-    //PROCESSAMENTO
-    
-
-    //SAÍDA
-
+    document.write(`Média: ${soma/qtdNotas}`);
 </script>
