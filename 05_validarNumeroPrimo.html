@@ -6,11 +6,22 @@
     */
 
     //ENTRADA
+    let numUser = Number(prompt(`Escolha um número`));
+    let numLista = [];
 
+    if (numUser === 1) {
+        numUser = Number(prompt(`Informe outro número diferente de um`));
+    } else {
+        for (let c = 2; c < numUser; c++) {
+            numLista.push(numUser % c);
+        }
+    }
 
-    //PROCESSAMENTO
-
-
-    //SAÍDA
+    if (numLista.includes(0) === false) {
+        document.write(`${numUser} é primo!`);
+    } else {
+        document.write(`${numUser} não é primo!`);
+        
+    }
 
 </script>

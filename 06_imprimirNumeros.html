@@ -6,8 +6,21 @@
     */
 
     //ENTRADA
+    let numInicial = Number(prompt(`Informe um número inicial:`));
+    let numFinal = Number(prompt(`Informe um número final:`));
+    let mensagem = "";
 
-    
+    if (numInicial > numFinal) {
+        alert(`Erro! O número inicial é maior que o final!`);
+        numFinal = Number(prompt(`Informe um número final maior que o inicial:`));
+    } else {
+        for (let c = numInicial; c < numFinal; c++) {
+            if (c % 2 === 1) {
+                if 
+                mensagem += c + ", "
+            }
+        }
+    }
     //PROCESSAMENTO
 
     
