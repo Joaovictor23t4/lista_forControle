@@ -5,11 +5,15 @@
     */
 
     //ENTRADA
-
-
-    //PROCESSAMENTO
-
-
-    //SAÍDA
-
+    let mensagem = "";
+    for (let c = 1; c <= 100; c++) {
+        if (c % 3 === 0) {
+            if (c === 99) {
+                mensagem += c;
+                break;
+            }
+            mensagem += c + ", ";
+        }
+    }
+    document.write(mensagem);
 </script>
