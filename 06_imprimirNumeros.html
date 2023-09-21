@@ -16,14 +16,14 @@
     } else {
         for (let c = numInicial; c < numFinal; c++) {
             if (c % 2 === 1) {
-                if 
-                mensagem += c + ", "
+                if (c === numFinal - 1) {
+                    mensagem += c;
+                    break;    
+                }
+                mensagem += c + ", ";
             }
         }
     }
-    //PROCESSAMENTO
-
-    
-    //SAÍDA
+    document.write(`${mensagem}`);
 
 </script>

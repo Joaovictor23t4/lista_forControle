@@ -6,11 +6,13 @@
     */
 
     //ENTRADA
+    let populacao = 80000;
+    let taxa = 0.03;
+    let c;
 
-    
-    //PROCESSAMENTO
+    for (c = 0; populacao <= 200000; c++) {
+        populacao = populacao * 1.03;
+    }
 
-    
-    //SAÍDA
-
+    document.write(`Demorou ${c} anos para a população chegar em 200.000 habitantes.`)
 </script>
