@@ -5,11 +5,10 @@
     */
 
     let inicial = 1000;
-    let investimento = 1.02;
     let c;
 
     for (c = 0; inicial <= 2000; c++) {
-        inicial = inicial * investimento;
+        inicial = inicial * 1.02;
     }
     document.write(`<p>Demorou ${c} dias para o Joãozinho conseguir R$${inicial.toFixed(2)}</p>`);
 </script>

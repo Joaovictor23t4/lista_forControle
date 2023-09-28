@@ -29,22 +29,7 @@
         }
     }
 
-    if (contador1 > contador2 && contador2 > contador3) {
-        document.write(`Resultado: 1 - ${candidato1} com ${contador1} votos, o que representa ${candidato1 * 100 / qtdAlunos}; 2 - ${candidato2} com ${contador2} votos, o que representa ${contador2 * 100 / qtdAlunos}; 3 - ${candidato3} com ${contador3} votos, o que representa ${contador3 * 100 / qtdAlunos}`);
-    } 
-    else if (contador1 > contador3 && contador3 > contador2) {
-        document.write(`Resultado: 1 - ${candidato1} com ${contador1} votos, o que representa ${candidato1 * 100 / qtdAlunos}; 2 - ${candidato3} com ${contador3} votos, o que representa ${contador3 * 100 / qtdAlunos}; 3 - ${candidato2} com ${contador2} votos, o que representa ${contador2 * 100 / qtdAlunos}`);
-    } 
-    else if (contador2 > contador1 && contador1 > contador3) {
-        document.write(`Resultado: 1 - ${candidato2} com ${contador2} votos, o que representa ${candidato2 * 100 / qtdAlunos}; 2 - ${candidato1} com ${contador1} votos, o que representa ${contador1 * 100 / qtdAlunos}; 3 - ${candidato3} com ${contador3} votos, o que representa ${contador3 * 100 / qtdAlunos}`);
-    }
-    else if (contador2 > contador3 && contador3 > contador1) {
-        document.write(`Resultado: 1 - ${candidato2} com ${contador2} votos, o que representa ${candidato2 * 100 / qtdAlunos}; 2 - ${candidato3} com ${contador3} votos, o que representa ${contador3 * 100 / qtdAlunos}; 3 - ${candidato1} com ${contador1} votos, o que representa ${contador1 * 100 / qtdAlunos}`);
-    }
-    else if (contador3 > contador1 && contador1 > contador2) {
-        document.write(`Resultado: 1 - ${candidato3} com ${contador3} votos, o que representa ${candidato3 * 100 / qtdAlunos}; 2 - ${candidato1} com ${contador1} votos, o que representa ${contador1 * 100 / qtdAlunos}; 3 - ${candidato2} com ${contador2} votos, o que representa ${contador2 * 100 / qtdAlunos}`);
-    }
-    else if (contador3 > contador2 && contador2 > contador1) {
-        document.write(`Resultado: 1 - ${candidato3} com ${contador3} votos, o que representa ${candidato3 * 100 / qtdAlunos}; 2 - ${candidato2} com ${contador2} votos, o que representa ${contador2 * 100 / qtdAlunos}; 3 - ${candidato1} com ${contador1} votos, o que representa ${contador1 * 100 / qtdAlunos}`);
-    }
+    let ganhador = (contador1 > contador2 && contador1 > contador3) ? candidato1 : (contador2 > contador1 && contador2 > contador3) ? candidato2 : candidato3;
+
+    document.write(`O ganhador foi ${ganhador}! Ficou assim: 1 - ${candidato1} com ${contador1} votos, ou, ${contador1 * 100 / qtdAlunos}% dos votos; 2- ${candidato2} com ${candidato2} votos, ou, ${contador2 * 100 / qtdAlunos}% dos votos; 3 - ${candidato3} com ${contador3} votos, ou, ${contador3 * 100 / qtdAlunos}% dos votos`);
 </script>
